@@ -6,8 +6,8 @@ with open("linear_model.pkl","rb") as f:
     model=pickle.load(f)
 
     st.title("jitne hours padoge utne number laoge")
-    st.header("lets try something new!")
-    st.write("abb sab chota likhega yeh")
+    st.header("hamesha concept clr rakho")
+    st.write("hamesha confident raho")
 
     hours=st.number_input("please enter your number of hours:")
     bt=st.button("click Here ✅")
@@ -16,7 +16,7 @@ with open("linear_model.pkl","rb") as f:
  
 if bt:
     if hours<0 or hours>24:
-        st.error("please enter a valid hour")
+        st.error("please enter a valid hour less than or equal 24 hours")
     elif 0<hours<9.50:
         if output<33:
             output=str(output)
